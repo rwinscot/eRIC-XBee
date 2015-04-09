@@ -526,10 +526,10 @@ design rules under a new name.</description>
 <element name="E$27" library="testpad" package="TP11R" value="" x="20.5" y="20.45"/>
 <element name="E$28" library="testpad" package="TP11R" value="" x="23" y="20.45"/>
 <element name="E$29" library="testpad" package="TP11R" value="" x="25.6" y="20.45"/>
-<element name="E$44" library="SparkFun-Connectors" package="SMA-EDGE" value="" x="17.95" y="47.45"/>
-<element name="E$23" library="SparkFun-Capacitors" package="SJ_2S-NO" value="" x="14" y="17.7"/>
-<element name="E$24" library="SparkFun-Connectors" package="1X10-2MM" value="" x="9.45" y="21.55" rot="MR90"/>
-<element name="E$26" library="SparkFun-Connectors" package="1X10-2MM" value="" x="31.6" y="21.55" rot="MR90"/>
+<element name="SMA" library="SparkFun-Connectors" package="SMA-EDGE" value="" x="17.95" y="47.45"/>
+<element name="J1" library="SparkFun-Capacitors" package="SJ_2S-NO" value="" x="14" y="17.7"/>
+<element name="H1" library="SparkFun-Connectors" package="1X10-2MM" value="" x="9.45" y="21.55" rot="MR90"/>
+<element name="H2" library="SparkFun-Connectors" package="1X10-2MM" value="" x="31.6" y="21.55" rot="MR90"/>
 <element name="E$2" library="testpad" package="TP06R" value="" x="20.5" y="18.3" rot="MR0"/>
 <element name="E$4" library="testpad" package="TP06R" value="" x="21.75" y="18.3" rot="MR0"/>
 <element name="E$5" library="testpad" package="TP06R" value="" x="23" y="18.3" rot="MR0"/>
@@ -539,43 +539,47 @@ design rules under a new name.</description>
 <element name="E$31" library="testpad" package="TP06R" value="" x="28" y="18.3" rot="MR0"/>
 <element name="E$32" library="testpad" package="TP06R" value="" x="29.25" y="18.3" rot="MR0"/>
 <element name="E$33" library="testpad" package="TP06R" value="" x="30.5" y="18.3"/>
-<element name="E$1" library="ref-packages" package="R0402" value="" x="11.2" y="36.9" rot="R90"/>
-<element name="E$3" library="ref-packages" package="R0402" value="" x="11.25" y="31.35" rot="R90"/>
-<element name="E$34" library="eagle-ltspice" package="C0603" value="" x="11.5" y="18.7" rot="R90"/>
+<element name="R1" library="ref-packages" package="R0402" value="10K" x="11.2" y="36.9" rot="R90"/>
+<element name="R2" library="ref-packages" package="R0402" value="10K" x="11.25" y="31.35" rot="R90"/>
+<element name="C1" library="eagle-ltspice" package="C0603" value=".1uF" x="11.5" y="18.7" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
 <polygon width="0.4064" layer="1">
-<vertex x="8.25" y="40.8"/>
-<vertex x="8.25" y="15.55"/>
-<vertex x="32.85" y="15.55"/>
-<vertex x="32.85" y="40.85"/>
-<vertex x="24.8" y="49.15"/>
 <vertex x="15.75" y="49.05"/>
-<vertex x="8.2" y="40.85"/>
+<vertex x="8.538225" y="41.74206875" curve="44.620557"/>
+<vertex x="8.25" y="41.039659375"/>
+<vertex x="8.25" y="16.55" curve="90"/>
+<vertex x="9.25" y="15.55"/>
+<vertex x="31.85" y="15.55" curve="90"/>
+<vertex x="32.85" y="16.55"/>
+<vertex x="32.80084375" y="40.8331875" curve="45.248454"/>
+<vertex x="32.503490625" y="41.542803125"/>
+<vertex x="24.8" y="49.15"/>
 </polygon>
 <polygon width="0.254" layer="16">
-<vertex x="8.15" y="40.9"/>
-<vertex x="8.15" y="15.55"/>
-<vertex x="32.9" y="15.55"/>
-<vertex x="32.9" y="40.85"/>
+<vertex x="8.15" y="41.4"/>
+<vertex x="8.15" y="16.55" curve="90"/>
+<vertex x="9.15" y="15.55"/>
+<vertex x="31.9" y="15.55" curve="90"/>
+<vertex x="32.9" y="16.55"/>
+<vertex x="32.85" y="41.3"/>
 <vertex x="25" y="49.05"/>
 <vertex x="15.65" y="49.05"/>
-<vertex x="8.1" y="40.9"/>
 </polygon>
-<contactref element="E$24" pad="1"/>
+<contactref element="H1" pad="1"/>
 <contactref element="GND" pad="TP"/>
-<contactref element="E$23" pad="1"/>
+<contactref element="J1" pad="1"/>
 <contactref element="E$12" pad="TP"/>
-<contactref element="E$44" pad="GND@0"/>
-<contactref element="E$44" pad="GND@2"/>
-<contactref element="E$44" pad="GND@1"/>
-<contactref element="E$44" pad="GND@3"/>
+<contactref element="SMA" pad="GND@0"/>
+<contactref element="SMA" pad="GND@2"/>
+<contactref element="SMA" pad="GND@1"/>
+<contactref element="SMA" pad="GND@3"/>
 <wire x1="17.6" y1="47" x2="16.5" y2="46.95" width="0.6096" layer="1"/>
 <wire x1="16.5" y1="46.95" x2="16.45" y2="46.15" width="0.6096" layer="1"/>
 <wire x1="23" y1="46.95" x2="24.45" y2="46.95" width="0.6096" layer="1"/>
 <wire x1="24.45" y1="46.95" x2="24.45" y2="46.2" width="0.6096" layer="1"/>
-<contactref element="E$34" pad="1"/>
+<contactref element="C1" pad="1"/>
 <via x="14.4" y="42.2" extent="1-16" drill="0.3"/>
 <via x="14.75" y="43.15" extent="1-16" drill="0.3"/>
 <via x="15.45" y="43.85" extent="1-16" drill="0.3"/>
@@ -599,7 +603,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANT">
 <contactref element="E$11" pad="TP"/>
-<contactref element="E$44" pad="SIG"/>
+<contactref element="SMA" pad="SIG"/>
 <wire x1="20.49" y1="47.45" x2="20.39" y2="46.21" width="0.6096" layer="1"/>
 <wire x1="20.39" y1="46.21" x2="20.39" y2="44.2" width="0.254" layer="1"/>
 <wire x1="20.39" y1="44.2" x2="19.39" y2="43.2" width="0.254" layer="1" curve="-90"/>
@@ -609,8 +613,8 @@ design rules under a new name.</description>
 <wire x1="15.4" y1="40.9" x2="15.45" y2="40.85" width="0.254" layer="1" curve="90"/>
 </signal>
 <signal name="S$27">
-<contactref element="E$3" pad="2"/>
-<contactref element="E$24" pad="8"/>
+<contactref element="R2" pad="2"/>
+<contactref element="H1" pad="8"/>
 <wire x1="11.25" y1="32" x2="11.2" y2="32.05" width="0.254" layer="1"/>
 <wire x1="11.2" y1="32.05" x2="11.2" y2="33.15" width="0.254" layer="1"/>
 <via x="11.2" y="33.15" extent="1-16" drill="0.3"/>
@@ -620,17 +624,17 @@ design rules under a new name.</description>
 </signal>
 <signal name="S$14">
 <contactref element="TX" pad="TP"/>
-<contactref element="E$3" pad="1"/>
+<contactref element="R2" pad="1"/>
 <wire x1="11.25" y1="30.7" x2="12.9" y2="30.7" width="0.254" layer="1"/>
 </signal>
 <signal name="S$28">
-<contactref element="E$1" pad="2"/>
-<contactref element="E$24" pad="9"/>
+<contactref element="R1" pad="2"/>
+<contactref element="H1" pad="9"/>
 <wire x1="9.45" y1="37.55" x2="11.2" y2="37.55" width="0.254" layer="1"/>
 </signal>
 <signal name="S$3">
 <contactref element="RX" pad="TP"/>
-<contactref element="E$1" pad="1"/>
+<contactref element="R1" pad="1"/>
 <wire x1="12.9" y1="33.2" x2="11.54289375" y2="34.50710625" width="0.254" layer="1"/>
 <wire x1="11.54289375" y1="34.50710625" x2="11.2" y2="35.2142125" width="0.254" layer="1" curve="-45"/>
 <wire x1="11.2" y1="35.2142125" x2="11.2" y2="36.25" width="0.254" layer="1"/>
@@ -642,7 +646,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="S$6">
 <contactref element="E$10" pad="TP"/>
-<contactref element="E$24" pad="2"/>
+<contactref element="H1" pad="2"/>
 <wire x1="12.9" y1="28.1" x2="12.25" y2="28.1" width="0.254" layer="1"/>
 <wire x1="12.25" y1="28.1" x2="11.54289375" y2="27.39289375" width="0.254" layer="1"/>
 <wire x1="11.54289375" y1="27.39289375" x2="11.25" y2="26.6857875" width="0.254" layer="1" curve="45"/>
@@ -653,11 +657,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="S$7">
 <contactref element="VCC" pad="TP"/>
-<contactref element="E$24" pad="10"/>
+<contactref element="H1" pad="10"/>
 <wire x1="9.45" y1="39.55" x2="14.95" y2="34.15" width="0.4064" layer="16" curve="-90"/>
 <wire x1="14.95" y1="34.15" x2="14.95" y2="27.6" width="0.4064" layer="16"/>
 <via x="14.95" y="27.6" extent="1-16" drill="0.3"/>
-<contactref element="E$34" pad="2"/>
+<contactref element="C1" pad="2"/>
 <wire x1="11.5" y1="19.55" x2="11.5" y2="21" width="0.4064" layer="1"/>
 <via x="11.5" y="21" extent="1-16" drill="0.3"/>
 <wire x1="11.5" y1="21" x2="11.8" y2="21" width="0.4064" layer="16"/>
@@ -669,7 +673,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="S$8">
 <contactref element="E$7" pad="TP"/>
-<contactref element="E$26" pad="2"/>
+<contactref element="H2" pad="2"/>
 <wire x1="29.847896875" y1="24.3" x2="19.52" y2="24.3" width="0.254" layer="1"/>
 <wire x1="19.52" y1="24.3" x2="18.25" y2="25.57" width="0.254" layer="1" curve="-90"/>
 <wire x1="18.25" y1="25.57" x2="18.25" y2="30.6" width="0.254" layer="1"/>
@@ -679,7 +683,7 @@ design rules under a new name.</description>
 <wire x1="13.1" y1="35.75" x2="18.25" y2="30.6" width="0.254" layer="1" curve="-90"/>
 </signal>
 <signal name="S$1">
-<contactref element="E$23" pad="2"/>
+<contactref element="J1" pad="2"/>
 <contactref element="E$21" pad="TP"/>
 <wire x1="28.25" y1="25.6" x2="28.129290625" y2="25.65" width="0.254" layer="1" curve="45"/>
 <wire x1="28.129290625" y1="25.65" x2="19.6" y2="25.65" width="0.254" layer="1"/>
