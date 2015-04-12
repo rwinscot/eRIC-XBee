@@ -799,7 +799,7 @@ design rules under a new name.</description>
 <wire x1="30.5" y1="19.697896875" x2="30.5" y2="18.3" width="0.254" layer="1"/>
 </signal>
 <signal name="S$29">
-<via x="20.475" y="47.4" extent="1-16" drill="1" shape="square"/>
+<via x="20.5" y="47.4" extent="1-16" drill="1"/>
 </signal>
 </signals>
 <errors>
